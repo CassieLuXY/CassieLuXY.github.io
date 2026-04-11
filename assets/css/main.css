@@ -115,6 +115,11 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
+	head a {
+		border-bottom: none;
+		text-decoration: none;
+	}
+
 		a:hover {
 			border-bottom-color: transparent;
 			color: #49bf9d !important;

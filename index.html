@@ -9,78 +9,222 @@
 		<title>Xingye's Personal Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<style> 
-
-		.margin{
-	margin:30px 50px;
-	
+		<style>
+body, html {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
 }
-			.flex-container {
-			  display: -webkit-flex;
-			  display: flex;  
-			  -webkit-flex-flow: row wrap;
-			  flex-flow: row wrap;
-			  font-weight: bold;
-			  text-align: center;
-			}
-			
-			.flex-container > * {
-			  padding: 10px;
-			  flex: 1 100%;
-			}
-			
-			
-			.header {background: rgb(245, 240, 250);}
-			.footer {background: rgb(227, 217, 236);}
-			.aside {background: #68519a;}
-			
-			@media all and (min-width: 768px) {
-			  .aside { flex: 1 auto; }
-			  .main    { flex: 30px; }
-			  .right {flex: 30px;}
-			  .aside { order: 1; } 
-			  .main    { order: 2; }
-			  .footer  { order: 4; }
-			}
-			</style>
+
+body {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: #333;
+	background: #fff;
+}
+
+.margin {
+	margin: 30px 50px;
+}
+
+.page-layout {
+	display: flex;
+	flex-wrap: nowrap;
+	min-height: 100vh;
+}
+
+.sidebar {
+	width: 280px;
+	min-width: 240px;
+	height: 100vh;
+	background: rgb(246, 250, 240);
+	padding: 40px 20px;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	align-self: flex-start;
+	overflow: auto;
+	text-align: center;
+}
+
+.profile img {
+	width: 100%;
+	max-width: 220px;
+	height: auto;
+	border-radius: 80px;
+	display: block;
+	margin: 0 auto 20px;
+}
+
+.profile h1 {
+	margin: 0 0 20px;
+	font-size: 2rem;
+	line-height: 1.1;
+	font-family: "Times New Roman", serif;
+	color: #6b7c6a;
+}
+
+.top-links th {
+	padding: 6px 0;
+	text-align: left;
+}
+
+.top-links h2 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.top-links a {
+	display: block;
+	padding: 12px 14px;
+	border-radius: 12px;
+	background: rgba(107, 124, 106, 0.08);
+	color: #6b7c6a;
+	text-decoration: none;
+	font-family: "Times New Roman", serif;
+	font-size: 1rem;
+}
+
+.top-links a:hover {
+	background: rgba(107, 124, 106, 0.16);
+	text-decoration: none;
+}
+
+.main-content {
+	flex: 1;
+	min-width: 320px;
+	background: #fff;
+	padding: 40px 40px 60px;
+}
+
+.main-content section {
+	margin-bottom: 50px;
+}
+
+.main-content h1 {
+	margin: 0 0 1rem;
+	font-family: "Times New Roman", serif;
+	font-size: 2rem;
+	line-height: 1.1;
+	color: #6b7c6a;
+	padding-bottom: 0.45rem;
+	border-bottom: 2px solid rgba(107, 124, 106, 0.12);
+}
+
+.main-content h3 {
+	margin: 1.1rem 0 0.4rem;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	font-family: "Times New Roman", serif;
+	color: #333;
+}
+
+.main-content h4 {
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.6;
+	font-family: "Times New Roman", serif;
+	color: #333;
+}
+
+.main-content p {
+	margin: 0 0 1rem;
+	line-height: 1.75;
+	color: #4a4a4a;
+	font-family: "Times New Roman", serif;
+}
+
+.main-content ul,
+.main-content ol {
+	margin: 1rem 1rem 1rem 1rem;
+	color: #444;
+}
+
+.main-content li {
+	margin-bottom: 0.8rem;
+}
+
+.main-content .icons {
+	display: flex;
+	gap: 16px;
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0;
+}
+
+.main-content .icons img {
+	display: block;
+}
+
+.main-content a {
+	color: #7d8c72;
+	text-decoration: none;
+}
+
+.main-content a:hover {
+	text-decoration: underline;
+}
+
+.main-content hr {
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
+	margin: 2rem 0;
+}
+
+.main-content h1 font,
+.main-content h3 font,
+.main-content p font,
+.main-content li font,
+.main-content h4 font {
+	font-size: inherit !important;
+	font-family: inherit !important;
+	color: inherit !important;
+}
+	}
+
+	.sidebar {
+		position: static;
+		width: 100%;
+	}
+
+	.margin {
+		margin: 20px;
+	}
+}
+</style>
 	</head>
 	
 
-		<!-- Header -->
-		<header class="header">	
-			<!img style="border-radius: 50%; margin-left: 10%;" src="images/bg.jpg" width="15%" height="15%">
-			
-				<h2 style="text-align:center;"><font face="Times New Roman" size="9" ><br>Dr LU Xingye<br> </font></h2>	
-			
-				
-				<table style="width:100%">
-					<tr>
-					  <th><h2><a href="#publication"><font face="Times New Roman" size="5" color=#2f0786>Publications</font></a></h2></th>
-					  <th><h2><a href="#Teaching"><font face="Times New Roman" size="5" color=#2f0786>Teaching</font></a></h2></th>
-					  <th><h2><a href="#Services"><font face="Times New Roman" size="5" color=#2f0786>Services</font></a></h2></th>
-					  <th><h2><a href="#contactinfo"><font face="Times New Roman" size="5" color=#2f0786>Contact Info</font></a></h2></th>
-					</tr>
-				</table>
-
-				
-			
-			
-			
-		</header>
-
-		<!-- Main -->
-			<div id="main" >
-				<div class="margin">
-					<font style="background:rgb(227, 217, 236); text-align:center;" face="Times New Roman" size="5" ;">I am looking for self-motivated research assistants. If you are interested, please send me your CV.</font>
+		<!-- Page Layout -->
+		<div class="page-layout">
+			<aside class="sidebar">
+				<div class="profile">
+					<img src="images/bg.jpg" alt="Dr LU Xingye" />
+					<h1>Dr LU Xingye</h1>
+				</div>
+				<table class="top-links">
+						<tr>
+							<th><h2><a href="#publication"><font face="Times New Roman" size="5" color="#6b7c6a">Publications</font></a></h2></th>
+						</tr>
+						<tr>
+							<th><h2><a href="#Teaching"><font face="Times New Roman" size="5" color="#6b7c6a">Teaching</font></a></h2></th>
+						</tr>
+						<tr>
+							<th><h2><a href="#Services"><font face="Times New Roman" size="5" color="#6b7c6a">Services</font></a></h2></th>
+						</tr>
+						<tr>
+							<th><h2><a href="#contactinfo"><font face="Times New Roman" size="5" color="#6b7c6a">Contact Info</font></a></h2></th>
+						</tr>
+					</table>
+			</aside>
+			<main class="main-content">
+				<div id="main" >
+					<div class="margin">
+					<!--<font style="background:rgb(227, 217, 236); text-align:center;" face="Times New Roman" size="5" ;">I am looking for self-motivated research assistants. If you are interested, please send me your CV.</font>-->
 				<!-- One -->
 					<section id="one">
 
-						<img style="float:right; margin-left: 3%; border-radius:80% ;" src="images/bg.jpg" width="300px" height="300px">
-						
-					
 
-						<h2 ><font face="Times New Roman" >Hi, I'm Lu Xingye.</font></h2>
-					
                   
 							<p  align="justify" style=" line-height: 200%"><font face="Times New Roman" size="4">I am currently a research assistant professor at the Department of Computing, The Hong Kong Polytechnic University (PolyU). Before joining PolyU, I was a post-doctoral fellow at the Department of Computer Science, the University of Hong Kong. I received my Ph.D. degree from PolyU in 2020 under the supervision of Prof. Man Ho Allen Au.  </font></p>
 
@@ -109,8 +253,6 @@
                                     <img border="0" src="images/orcid.svg" height="30" width="30"/></a>
 
                             </ul>
-							
-					
                        
             </section>
             <hr>
@@ -121,18 +263,21 @@
 					<div id="Competition"></div>
 					<h1><font face="Times New Roman" >Research Competition</font></h1>
 					<ul>
-					<li><h3> <font face="Times New Roman"> ZPrize 23/24 </font> <a href="https://www.zprize.io/blog/announcing-the-2023-zprize-winners" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> High Throughput Signature Verification (250,000 USD)</a></font></h3>
-					<li><h3> <font face="Times New Roman"> ZPrize 22/23 </font> <a href="https://www.zprize.io/blog/zprize-spotlight-open-division-prize-3-advancing-zk-technology-through-plonk-dizk-gpu-acceleration" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> PLONK-DIZK GPU Acceleration (550,000 USD)</a></font></h3>
-					<a href="https://www.polyu.edu.hk/comp/news-and-events/news/2023/0516_zprize/" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> Department of Computing News</a></font>&ensp;&ensp;&ensp;&ensp;
-					<a href="https://www.polyu.edu.hk/media/media-releases/2023/0517_polyu-scholars-win-zprize-for-ground-breaking-web3-technology/" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>PolyU Media Release</a></font></li>
+					<li><h3> <font face="Times New Roman"> ZPrize 23/24 </font> <a href="https://www.zprize.io/blog/announcing-the-2023-zprize-winners" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> High Throughput Signature Verification (250,000 USD Cash Prize)</a></font></h3>
+					<li><h3> <font face="Times New Roman"> ZPrize 22/23 </font> <a href="https://www.zprize.io/blog/zprize-spotlight-open-division-prize-3-advancing-zk-technology-through-plonk-dizk-gpu-acceleration" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> PLONK-DIZK GPU Acceleration (550,000 USD Cash Prize)</a></font></h3>
+	
 					</ul>
 				</section>
 				<hr>
 			
 					<section id="three">
                         <div id="publication"></div>
-						<h1><font face="Times New Roman" >Publications</font></h1>
+						<h1><font face="Times New Roman" > Selected Publications</font></h1>
 						<ol>
+							<li>
+								<h3><b><a style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Efficient Construction of Threshold BBS+ Signatures and its Extensions</a></b> (PKC 2026)</font></h3>
+								<p><font face="Times New Roman">Yang Heng, Mengling Liu, Xingye Lu, Haiyang Xue, Zijian Bao, Man Ho Au</p>
+							</li>
 							<li>
 								<h3><b><a href="https://eprint.iacr.org/2025/533.pdf" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>JesseQ: Efficient Zero-Knowledge Proofs for Circuits over Any Field</a></b> (S&P 2025)</font></h3>
 								<p><font face="Times New Roman">Mengling Liu, Yang Heng, Xingye Lu, Man Ho Au</p>
@@ -143,16 +288,16 @@
 								<p><font face="Times New Roman">Yuxi Xue, Xingye Lu, Man Ho Au, Chengru Zhang</p>
 							</li>
                             <li>
-							   <h3><b><a href="链接地址" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Raptor: a practical lattice-based (linkable) ring signature</a></b> (ACNS 2019)</font></h3>
+							   <h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Raptor: a practical lattice-based (linkable) ring signature</a></b> (ACNS 2019)</font></h3>
 							   <p><font face="Times New Roman">Xingye Lu, Man Ho Au, Zhenfei Zhang</p>
 						   </li>
-                            <li><h3><b><a href="链接地址" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>(Linkable) Ring Signature from Hash-Then-One-Way Signature</a></b> (IEEE TrustCom 2019)</font></h3>
+                            <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>(Linkable) Ring Signature from Hash-Then-One-Way Signature</a></b> (IEEE TrustCom 2019)</font></h3>
                                 <p>Xingye Lu, Man Ho Au, Zhenfei Zhang</p></li>
-                            <li><h3><b><a href="链接地址" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Practical Signatures from the Partial Fourier Recovery Problem Revisited: A Provably-Secure and Gaussian-Distributed Construction</a></b> (ACISP 2018)</font></h3>
+                            <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Practical Signatures from the Partial Fourier Recovery Problem Revisited: A Provably-Secure and Gaussian-Distributed Construction</a></b> (ACISP 2018)</font></h3>
                                 <p>Xingye Lu, Zhenfei Zhang, Man Ho Au</p></li>
-                            <li><h3><b><a href="链接地址" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Anonymous Identification for Ad Hoc Group</a></b> (ASIACCS 2016)</font></h3>
+                            <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Anonymous Identification for Ad Hoc Group</a></b> (ASIACCS 2016)</font></h3>
                                 <p>Xingye Lu, Man Ho Au</p></li>
-                            <li><h3><font face="Times New Roman" >Book Chapter:</font> <b><a href="链接地址" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>An Introduction to Various Privacy Models</font></a></b></h3>
+                            <li><h3><font face="Times New Roman" >Book Chapter:</font> <b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>An Introduction to Various Privacy Models</font></a></b></h3>
                                 <p>Xingye Lu, Man Ho Au</p></li>
                     					</section>
                     <hr>
@@ -175,6 +320,7 @@
                         <div id="Services"></div>
 						<h1><font face="Times New Roman" >Services</font></h1>
 						<ul>
+							<li><h3><font face="Times New Roman" >Program committee member of BCRA 2025, 2026 </font></h3></li>
 							<li><h3><font face="Times New Roman" >Program committee member of ProvSec 2023, 2024, 2025 </font></h3></li>
 							<li><h3><font face="Times New Roman" >Program committee member of ISPEC 2023 </font></h3></li>
 							<li><h3><font face="Times New Roman" >Program committee member of APKC 2021</font></h3></li>
@@ -215,7 +361,9 @@
 			
 
 			</div>
-
+		</div>
+	</main>
+</div>
 		<!-- Footer -->
 		
 

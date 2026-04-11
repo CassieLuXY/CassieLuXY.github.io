@@ -143,6 +143,11 @@ $size-header-pad: 4em;
 		}
 	}
 
+	head a {
+		border-bottom: none;
+		text-decoration: none;
+	}
+
 	strong, b {
 		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
