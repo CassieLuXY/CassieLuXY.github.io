@@ -212,7 +212,8 @@ body {
 #two p,
 #three p,
 #four h3,
-#five li h3,
+#five h3,
+#five p,
 #six li h3 {
 	font-size: 1.25rem;
 	line-height: 1.8;
@@ -236,7 +237,8 @@ body {
 	#two p,
 	#three p,
 	#four h3,
-	#five li h3,
+	#five h3,
+	#five p,
 	#six li h3 {
 		font-size: 1.15rem;
 	}
@@ -258,7 +260,8 @@ body {
 	#two p,
 	#three p,
 	#four h3,
-	#five li h3,
+	#five h3,
+	#five p,
 	#six li h3 {
 		font-size: 1.1rem;
 	}
@@ -280,7 +283,8 @@ body {
 	#two p,
 	#three p,
 	#four h3,
-	#five li h3,
+	#five h3,
+	#five p,
 	#six li h3 {
 		font-size: 1rem;
 	}
@@ -326,6 +330,9 @@ body {
 							<th><h2><a href="#Teaching"><font face="Times New Roman" size="5" color="#6b7c6a">Teaching</font></a></h2></th>
 						</tr>
 						<tr>
+							<th><h2><a href="#Invited Talks"><font face="Times New Roman" size="5" color="#6b7c6a">Talks</font></a></h2></th>
+						</tr>
+						<tr>
 							<th><h2><a href="#Services"><font face="Times New Roman" size="5" color="#6b7c6a">Services</font></a></h2></th>
 						</tr>
 						<tr>
@@ -355,12 +362,12 @@ body {
 							<p align="justify" style="line-height: 200%; " ><font face="Times New Roman" size="4"> I am interested in:  </font></p>
 							<ul >
 							
-								<li><h4><font face="Times New Roman" size="4.5">Lattice-Based Cryptography</font></h4></li>
-								<li><h4><font face="Times New Roman" size="4.5">Zero-Knowledge Proofs</font></h4></li>
-								<li><h4><font face="Times New Roman" size="4.5">Blockchain Technology</font></h4></li>
+								<li><h4><font face="Times New Roman" size="4">Post-Quantum Cryptography</font></h4></li>
+								<li><h4><font face="Times New Roman" size="4">Zero-Knowledge Proofs</font></h4></li>
+								<li><h4><font face="Times New Roman" size="4">Blockchain Technology</font></h4></li>
 							</ul>
             </section>
-            <hr>
+
 			
 				<!-- Two -->
 
@@ -374,9 +381,9 @@ body {
 					<li><h3> <font face="Times New Roman"> ZPrize 22/23 </font> <a href="https://www.zprize.io/blog/zprize-spotlight-open-division-prize-3-advancing-zk-technology-through-plonk-dizk-gpu-acceleration" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> PLONK-DIZK GPU Acceleration (550,000 USD Cash Prize)</a></font></h3>
 					<p><font face="Times New Roman"> Focus: GPU acceleration for distributed PLONK zero-knowledge proof system  </p>
 				</section>`
-				<hr>
+
 			
-					<section id="three">
+				<section id="three">
                         <div id="publication"></div>
 						<h1><font face="Times New Roman" > Selected Publications</font></h1>
 		
@@ -385,7 +392,7 @@ body {
 								<p><font face="Times New Roman">Yang Heng, Mengling Liu, <b>Xingye Lu</b>, Haiyang Xue, Zijian Bao, Man Ho Au</p>
 							</li>
 							<li>
-								<h3><b><a href="https://eprint.iacr.org/2025/533.pdf" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>JesseQ: Efficient Zero-Knowledge Proofs for Circuits over Any Field</a></b> (S&P 2025)</font></h3>
+								<h3><b><a href="https://eprint.iacr.org/2025/533.pdf" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>JesseQ: Efficient Zero-Knowledge Proofs for Circuits over Any Field</a></b> (IEEE S&P 2025)</font></h3>
 								<p><font face="Times New Roman">Mengling Liu, Yang Heng, <b>Xingye Lu</b>*, Man Ho Au</p>
 							</li>
 							<li>
@@ -394,7 +401,7 @@ body {
 								<p><font face="Times New Roman">Yuxi Xue, <b>Xingye Lu</b>*, Man Ho Au, Chengru Zhang</p>
 							</li>
                             <li>
-							   <h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Raptor: a practical lattice-based (linkable) ring signature</a></b> (ACNS 2019)</font></h3>
+							   <h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Raptor: A Practical Lattice-Based (Linkable) Ring Signature</a></b> (ACNS 2019)</font></h3>
 							   <p><font face="Times New Roman"><b>Xingye Lu</b>, Man Ho Au, Zhenfei Zhang</p>
 						   </li>
                             <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>(Linkable) Ring Signature from Hash-Then-One-Way Signature</a></b> (IEEE TrustCom 2019)</font></h3>
@@ -410,20 +417,29 @@ body {
                     <hr>
 
 
-
-					
                             
 					</section>
 					<section id="four">
 						<div id="Teaching"></div>
 						<h1><font face="Times New Roman" >Teaching</font></h1>
-						<h3> <font face="Times New Roman"> Academic year 25/26  </font> <font face="Times New Roman" color=#68519a> COMP5565: Decentralized Apps Fundamentals and Development </a></font></h3>
-						<h3> <font face="Times New Roman"> Academic year 24/25  </font> <font face="Times New Roman" color=#68519a> COMP5564: Machine Learning and Applications in Finance</a></font></h3>
-						<h3> <font face="Times New Roman"> Academic year 22/23 & 23/24 </font> <font face="Times New Roman" color=#68519a> COMP6521: Cryptography and Blockchain</a></font></h3>
+						<h3> <font face="Times New Roman"> Academic year 25/26  </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> COMP5565: Decentralized Apps Fundamentals and Development </a></font></h3>
+						<h3> <font face="Times New Roman"> Academic year 24/25  </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> COMP5564: Machine Learning and Applications in Finance</a></font></h3>
+						<h3> <font face="Times New Roman"> Academic year 22/23 & 23/24 </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> COMP6521: Cryptography and Blockchain</a></font></h3>
 					</section>
                     <hr>
 
 					<section id="five">
+						<div id="Invited Talks"></div>
+						<h1><font face="Times New Roman" >Invited Talks</font></h1>
+						<h3> <font face="Times New Roman"> 2024, 2025 Jan  </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Polkadot Blockchain Academy (Invited Lecture)</a></font></h3>
+						<h3> <font face="Times New Roman"> 2024 Oct   </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> Cyber Security Summit Hong Kong 2024 (Invited Talk and Panellist)</a></font></h3>
+						<p><font face="Times New Roman"> Panel Discussion: Cybersecurity in Web 3 - Safeguarding Decentralized Platforms</p>
+						<h3> <font face="Times New Roman"> 2024 July </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom (Invited Speaker)</a></font></h3>
+						<p>Topic: Zero-Knowledge Proof In Blockchain Technology</p>
+					</section>
+                    <hr>
+
+					<section id="six">
                         <div id="Services"></div>
 						<h1><font face="Times New Roman" >Services</font></h1>
 						
@@ -440,7 +456,7 @@ body {
 
 
 
-                <section id="six">
+                <section id="seven">
                 	<div id="contactinfo"></div>
 					<h1><font face="Times New Roman" >Contact Info</font></h1>
 										
