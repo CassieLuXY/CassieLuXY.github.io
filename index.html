@@ -1,496 +1,73 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Xingye's Personal Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<style>
-body, html {
-	margin: 0;
-	padding: 0;
-	min-height: 100%;
-}
-
-body {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	color: #333;
-	background: #fff;
-}
-
-.margin {
-	margin: 30px 50px;
-}
-
-.page-layout {
-	display: flex;
-	flex-wrap: nowrap;
-	min-height: 100vh;
-}
-
-.sidebar {
-	width: 30%;
-	min-width: 240px;
-	height: 150vh;
-	background: rgb(246, 250, 240);
-	padding: 40px 20px;
-	box-sizing: border-box;
-	position: sticky;
-	top: 0;
-	align-self: flex-start;
-	overflow: auto;
-	text-align: center;
-}
-
-.profile img {
-	width: 80%;
-	height: auto;
-	border-radius: 80px;
-	display: block;
-	margin: 0 auto 40px;
-}
-
-.profile h1 {
-	margin: 0 0 20px;
-	font-size: 3rem;
-	line-height: 1.1;
-	font-family: "Times New Roman", serif;
-	color: #6b7c6a;
-}
-
-.top-links th {
-	padding: 6px 0;
-	text-align: center;
-}
-
-.top-links {
-	margin: 0 auto;
-}
-
-.top-links h2 {
-	margin: 0;
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.top-links a {
-	display: block;
-	padding: 12px 14px;
-	border-radius: 12px;
-	background: rgba(107, 124, 106, 0.08);
-	color: #6b7c6a;
-	text-decoration: none;
-	font-family: "Times New Roman", serif;
-	font-size: 1rem;
-}
-
-.top-links a:hover {
-	background: rgba(107, 124, 106, 0.16);
-	text-decoration: none;
-}
-
-.sidebar-icons {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	margin-top: 30px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid rgba(107, 124, 106, 0.2);
-}
-
-.sidebar-icons a {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	transition: opacity 0.3s ease-in-out;
-}
-
-.sidebar-icons a:hover {
-	opacity: 0.7;
-}
-
-.sidebar-icons img {
-	height: 35px;
-	width: 35px;
-}
-
-.main-content {
-	flex: 1;
-	min-width: 320px;
-	background: #fff;
-	padding: 40px 40px 60px;
-}
-
-.main-content section {
-	margin-bottom: 50px;
-}
-
-.main-content h1 {
-	margin: 0 0 1rem;
-	font-family: "Times New Roman", serif;
-	font-size: 2rem;
-	line-height: 1.1;
-	color: #6b7c6a;
-	padding-bottom: 0.45rem;
-	border-bottom: 2px solid rgba(107, 124, 106, 0.12);
-}
-
-.main-content h3 {
-	margin: 1.1rem 0 0.4rem;
-	font-size: 1.1rem;
-	line-height: 1.5;
-	font-family: "Times New Roman", serif;
-	color: #333;
-}
-
-.main-content h4 {
-	margin: 0;
-	font-size: 1rem;
-	line-height: 1.6;
-	font-family: "Times New Roman", serif;
-	color: #333;
-}
-
-.main-content p {
-	margin: 0 0 1rem;
-	line-height: 1.75;
-	color: #4a4a4a;
-	font-family: "Times New Roman", serif;
-}
-
-.main-content ul,
-.main-content ol {
-	margin: 1rem 1rem 1rem 1rem;
-	color: #444;
-}
-
-.main-content li {
-	margin-bottom: 0.8rem;
-}
-
-/* Self-intro section (section#one) - Larger responsive font sizes */
-#one p {
-	font-size: 1.25rem;
-	line-height: 1.8;
-}
-
-#one ul li h4 {
-	font-size: 1.35rem;
-	line-height: 1.8;
-}
-
-.main-content a {
-	color: #7d8c72;
-	text-decoration: none;
-}
-
-.main-content a:hover {
-	text-decoration: underline;
-}
-
-.main-content hr {
-	border: 0;
-	border-top: 1px solid rgba(255, 255, 255, 0.08);
-	margin: 2rem 0;
-}
-
-.main-content h1 font,
-.main-content h3 font,
-.main-content p font,
-.main-content li font,
-.main-content h4 font {
-	font-size: inherit !important;
-	font-family: inherit !important;
-	color: inherit !important;
-}
-
-/* Larger font sizes for Award & Competition, Publications, Teaching, Services, Contact Info */
-#two p,
-#three p,
-#four h3,
-#five h3,
-#five p,
-#six li h3 {
-	font-size: 1.25rem;
-	line-height: 1.8;
-}
-
-#two h3,
-#three h3 {
-	font-size: 1.2rem;
-	line-height: 1.8;
-}
-
-#two li p,
-#three li p {
-	font-size: 1.15rem;
-	line-height: 1.8;
-}
-
-/* Responsive font sizes for all sections */
-@media screen and (max-width: 1024px) {
-	#one p,
-	#two p,
-	#three p,
-	#four h3,
-	#five h3,
-	#five p,
-	#six li h3 {
-		font-size: 1.15rem;
-	}
-	
-	#one ul li h4,
-	#two h3,
-	#three h3 {
-		font-size: 1.15rem;
-	}
-	
-	#two li p,
-	#three li p {
-		font-size: 1.1rem;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#one p,
-	#two p,
-	#three p,
-	#four h3,
-	#five h3,
-	#five p,
-	#six li h3 {
-		font-size: 1.1rem;
-	}
-	
-	#one ul li h4,
-	#two h3,
-	#three h3 {
-		font-size: 1.1rem;
-	}
-	
-	#two li p,
-	#three li p {
-		font-size: 1.05rem;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	#one p,
-	#two p,
-	#three p,
-	#four h3,
-	#five h3,
-	#five p,
-	#six li h3 {
-		font-size: 1rem;
-	}
-	
-	#one ul li h4,
-	#two h3,
-	#three h3 {
-		font-size: 1rem;
-	}
-	
-	#two li p,
-	#three li p {
-		font-size: 0.95rem;
-	}
-}
-	}
-
-	.sidebar {
-		position: static;
-		width: 100%;
-	}
-
-	.margin {
-		margin: 20px;
-	}
-}
-</style>
-	</head>
-	
-
-		<!-- Page Layout -->
-		<div class="page-layout">
-			<aside class="sidebar">
-				<div class="profile">
-					<img src="images/bg.jpg" alt="Dr LU Xingye" />
-					<h1>Dr LU Xingye</h1>
-					<p><font face="Times New Roman" size="4">Research Assistant Professor @PolyU</font></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Xingye's Personal Page</title>
+	<script>
+		(function () {
+			try {
+				var storedTheme = localStorage.getItem("theme");
+				document.documentElement.dataset.theme = storedTheme || "dark";
+			} catch (error) {
+				document.documentElement.dataset.theme = "dark";
+			}
+		})();
+	</script>
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar" aria-label="Primary navigation">
+			<a class="brand" href="index.html">Dr LU Xingye</a>
+			<div class="nav-actions">
+				<div class="nav-links">
+					<a class="active" href="index.html">Home</a>
+					<a href="awards-publications.html">Awards/Publications</a>
+					<a href="teaching-talks.html">Teaching/Talks</a>
+					<a href="services.html">Services</a>
 				</div>
-				<table class="top-links">
-						<tr>
-							<th><h2><a href="#publication"><font face="Times New Roman" size="5" color="#6b7c6a">Publications</font></a></h2></th>
-						</tr>
-						<tr>
-							<th><h2><a href="#Teaching"><font face="Times New Roman" size="5" color="#6b7c6a">Teaching</font></a></h2></th>
-						</tr>
-						<tr>
-							<th><h2><a href="#Invited Talks"><font face="Times New Roman" size="5" color="#6b7c6a">Talks</font></a></h2></th>
-						</tr>
-						<tr>
-							<th><h2><a href="#Services"><font face="Times New Roman" size="5" color="#6b7c6a">Services</font></a></h2></th>
-						</tr>
-						<tr>
-							<th><h2><a href="#contactinfo"><font face="Times New Roman" size="5" color="#6b7c6a">Contact Info</font></a></h2></th>
-						</tr>
-					</table>
-				<div class="sidebar-icons">
-					<a href="https://scholar.google.com/citations?hl=en&user=PywG5AsAAAAJ#">
-						<img border="0" src="images/google-scholar.svg" alt="Google Scholar"/></a>
-					<a href="https://dblp.org/pid/180/8214.html">
-						<img border="0" src="images/dblp.svg" alt="DBLP"/></a>
-					<a href="https://orcid.org/0000-0002-3595-044X">
-						<img border="0" src="images/orcid.svg" alt="ORCID"/></a>
-				</div>
-			</aside>
-			<main class="main-content">
-				<div id="main" >
-					<div class="margin">
-					<!--<font style="background:rgb(227, 217, 236); text-align:center;" face="Times New Roman" size="5" ;">I am looking for self-motivated research assistants. If you are interested, please send me your CV.</font>-->
-				<!-- One -->
-					<section id="one">
-
-
-                  
-							<p  align="justify" style=" line-height: 200%"><font face="Times New Roman" size="4">I am currently a research assistant professor at the Department of Computing, The Hong Kong Polytechnic University (PolyU). Before joining PolyU, I was a post-doctoral fellow at the Department of Computer Science, the University of Hong Kong. I received my Ph.D. degree from PolyU in 2020 under the supervision of Prof. Man Ho Allen Au.  </font></p>
-
-							<p align="justify" style="line-height: 200%; " ><font face="Times New Roman" size="4"> I am interested in:  </font></p>
-							<ul >
-							
-								<li><h4><font face="Times New Roman" size="4">Post-Quantum Cryptography</font></h4></li>
-								<li><h4><font face="Times New Roman" size="4">Zero-Knowledge Proofs</font></h4></li>
-								<li><h4><font face="Times New Roman" size="4">Blockchain Technology</font></h4></li>
-							</ul>
-            </section>
-
-			
-				<!-- Two -->
-
-				<section id="two">
-					<div id="Competition"></div>
-					<h1><font face="Times New Roman" >Award and Competition</font></h1>
-			
-					<li><h3> <font face="Times New Roman"> ZPrize 23/24 </font> <a href="https://www.zprize.io/blog/announcing-the-2023-zprize-winners" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> High Throughput Signature Verification (250,000 USD Cash Prize)</a></font></h3>
-					<p><font face="Times New Roman"> Focus: Batched ECDSA signature verification with zero-knowledge proof </p>
-					</li>	
-					<li><h3> <font face="Times New Roman"> ZPrize 22/23 </font> <a href="https://www.zprize.io/blog/zprize-spotlight-open-division-prize-3-advancing-zk-technology-through-plonk-dizk-gpu-acceleration" style="text-decoration:none;"><font face="Times New Roman" color=#68519a> PLONK-DIZK GPU Acceleration (550,000 USD Cash Prize)</a></font></h3>
-					<p><font face="Times New Roman"> Focus: GPU acceleration for distributed PLONK zero-knowledge proof system  </p>
-				</section>`
-
-			
-				<section id="three">
-                        <div id="publication"></div>
-						<h1><font face="Times New Roman" > Selected Publications</font></h1>
-		
-							<li>
-								<h3><b><a href="https://eprint.iacr.org/2026/787" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Efficient Construction of Threshold BBS+ Signatures and its Extensions</a></b> (PKC 2026)</font></h3>
-								<p><font face="Times New Roman">Yang Heng, Mengling Liu, <b>Xingye Lu</b>, Haiyang Xue, Zijian Bao, Man Ho Au</p>
-							</li>
-							<li>
-								<h3><b><a href="https://eprint.iacr.org/2025/533" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>JesseQ: Efficient Zero-Knowledge Proofs for Circuits over Any Field</a></b> (IEEE S&P 2025)</font></h3>
-								<p><font face="Times New Roman">Mengling Liu, Yang Heng, <b>Xingye Lu</b>*, Man Ho Au</p>
-							</li>
-							<li>
-								<h3><b><a href="https://eprint.iacr.org/2024/553" style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Efficient Linkable Ring Signatures: New
-									Framework and Post-Quantum Instantiations</a></b> (ESORICS 2024)</font></h3>
-								<p><font face="Times New Roman">Yuxi Xue, <b>Xingye Lu</b>*, Man Ho Au, Chengru Zhang</p>
-							</li>
-                            <li>
-							   <h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Raptor: A Practical Lattice-Based (Linkable) Ring Signature</a></b> (ACNS 2019)</font></h3>
-							   <p><font face="Times New Roman"><b>Xingye Lu</b>, Man Ho Au, Zhenfei Zhang</p>
-						   </li>
-                            <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>(Linkable) Ring Signature from Hash-Then-One-Way Signature</a></b> (IEEE TrustCom 2019)</font></h3>
-                                <p><b>Xingye Lu</b>, Man Ho Au, Zhenfei Zhang</p></li>
-                            <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Practical Signatures from the Partial Fourier Recovery Problem Revisited: A Provably-Secure and Gaussian-Distributed Construction</a></b> (ACISP 2018)</font></h3>
-                                <p><b>Xingye Lu</b>, Zhenfei Zhang, Man Ho Au</p></li>
-                            <li><h3><b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Anonymous Identification for Ad Hoc Group</a></b> (ASIACCS 2016)</font></h3>
-                                <p><b>Xingye Lu</b>, Man Ho Au</p></li>
-                            <li><h3><font face="Times New Roman" >Book Chapter:</font> <b><a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>An Introduction to Various Privacy Models</font></a></b></h3>
-                                <p><b>Xingye Lu</b>, Man Ho Au</p></li>
-                    					<p><font face="Times New Roman">* Corresponding/Co-corresponding author</font></p>
-                    					</section>
-                    <hr>
-
-
-                            
-					</section>
-					<section id="four">
-						<div id="Teaching"></div>
-						<h1><font face="Times New Roman" >Teaching</font></h1>
-						<h3> <font face="Times New Roman"> Academic year 25/26  </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> COMP5565: Decentralized Apps Fundamentals and Development </a></font></h3>
-						<h3> <font face="Times New Roman"> Academic year 24/25  </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> COMP5564: Machine Learning and Applications in Finance</a></font></h3>
-						<h3> <font face="Times New Roman"> Academic year 22/23 & 23/24 </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> COMP6521: Cryptography and Blockchain</a></font></h3>
-					</section>
-                    <hr>
-
-					<section id="five">
-						<div id="Invited Talks"></div>
-						<h1><font face="Times New Roman" >Invited Talks</font></h1>
-						<h3> <font face="Times New Roman"> 2024, 2025 Jan  </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a>Polkadot Blockchain Academy (Invited Lecture)</a></font></h3>
-						<h3> <font face="Times New Roman"> 2024 Oct   </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> Cyber Security Summit Hong Kong 2024 (Invited Talk and Panellist)</a></font></h3>
-						<p><font face="Times New Roman"> Panel Discussion: Cybersecurity in Web 3 - Safeguarding Decentralized Platforms</p>
-						<h3> <font face="Times New Roman"> 2024 July </font> <a  style="text-decoration:none;"><font face="Times New Roman" color=#68519a> International Joint Conference on Theoretical Computer Science – Frontier of Algorithmic Wisdom (Invited Speaker)</a></font></h3>
-						<p>Topic: Zero-Knowledge Proof In Blockchain Technology</p>
-					</section>
-                    <hr>
-
-					<section id="six">
-                        <div id="Services"></div>
-						<h1><font face="Times New Roman" >Services</font></h1>
-						<li><h3> <font face="Times New Roman"> Workshop chair of Asiacrypt 2026 </font></h3></li>
-						<li><h3> <font face="Times New Roman"> Program committee member of </font></h3>
-						<p><font face="Times New Roman" >ISPEC (2023, 2026), Inscrypt (2026), BCRA (2025, 2026), ProvSec (2023, 2024, 2025, 2026), APKC (2021)</font></p></li>
-						 
-                        </section>
-                    <hr>
-
-
-
-
-                <section id="seven">
-                	<div id="contactinfo"></div>
-					<h1><font face="Times New Roman" >Contact Info</font></h1>
-										
-                                            
-                                                       <li> <h3>Address</h3>
-                                                        PQ737 Department of Computing,
-                                                        The Hong Kong Polytechnic University,
-                                                        Hong Kong SAR China
-                                                    
-                                                </li>
-                                                                  										  
-                                                                                                   
-                                                       <li> <h3>Email</h3>
-                                                        <a>xing-ye.lu [at] polyu.edu.hk</a>
-                                                    
-                                            
-											</div>
-									
-											</section>
-                                          
-                                        
-                                   
-
-
-			
-
+				<button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+					<span class="moon-icon" aria-hidden="true">☾</span>
+					<span class="sun-icon" aria-hidden="true">☀</span>
+				</button>
 			</div>
-		</div>
+		</nav>
+	</header>
+
+	<main>
+		<section id="one" class="intro">
+			<div>
+				<h1>Dr LU Xingye</h1>
+				<p class="role">Research Assistant Professor @PolyU</p>
+				<p>I am currently a research assistant professor at the Department of Computing, The Hong Kong Polytechnic University (PolyU). Before joining PolyU, I was a post-doctoral fellow at the Department of Computer Science, the University of Hong Kong. I received my Ph.D. degree from PolyU in 2020 under the supervision of Prof. Man Ho Allen Au.</p>
+				<p>I am interested in:</p>
+				<ul class="research-interests">
+					<li>Post-Quantum Cryptography</li>
+					<li>Zero-Knowledge Proofs</li>
+					<li>Blockchain Technology</li>
+				</ul>
+				<div class="social-links" aria-label="Academic profiles">
+					<a href="https://scholar.google.com/citations?hl=en&user=PywG5AsAAAAJ#" aria-label="Google Scholar">
+						<img src="images/google-scholar.svg" alt="" />
+					</a>
+					<a href="https://dblp.org/pid/180/8214.html" aria-label="DBLP">
+						<img src="images/dblp.svg" alt="" />
+					</a>
+					<a href="https://orcid.org/0000-0002-3595-044X" aria-label="ORCID">
+						<img src="images/orcid.svg" alt="" />
+					</a>
+				</div>
+				<div id="contactinfo" class="inline-contact">
+					<p><strong>Address:</strong> PQ737 Department of Computing, The Hong Kong Polytechnic University, Hong Kong SAR China</p>
+					<p><strong>Email:</strong> <a>xing-ye.lu [at] polyu.edu.hk</a></p>
+				</div>
+			</div>
+			<img class="portrait" src="images/bg.jpg" alt="Dr LU Xingye" />
+		</section>
 	</main>
-</div>
-		<!-- Footer -->
-		
 
-
-
-
-	<div class="footer" >
-		<center>NICE TO MEET YOU :) </center>
-		</div>
+	<footer class="footer">NICE TO MEET YOU :)</footer>
+	<script src="assets/js/theme.js"></script>
+</body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Services | Xingye Lu</title>
+	<script>
+		(function () {
+			try {
+				var storedTheme = localStorage.getItem("theme");
+				document.documentElement.dataset.theme = storedTheme || "dark";
+			} catch (error) {
+				document.documentElement.dataset.theme = "dark";
+			}
+		})();
+	</script>
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar" aria-label="Primary navigation">
+			<a class="brand" href="index.html">Dr LU Xingye</a>
+			<div class="nav-actions">
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="awards-publications.html">Awards/Publications</a>
+					<a href="teaching-talks.html">Teaching/Talks</a>
+					<a class="active" href="services.html">Services</a>
+				</div>
+				<button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+					<span class="moon-icon" aria-hidden="true">☾</span>
+					<span class="sun-icon" aria-hidden="true">☀</span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h1 class="page-title">Services</h1>
+
+		<section id="Services">
+			<ul class="entry-list">
+				<li class="entry">
+					<h3>Workshop chair of Asiacrypt 2026</h3>
+				</li>
+				<li class="entry">
+					<h3>Program committee member of</h3>
+					<p>ISPEC (2023, 2026), Inscrypt (2026), BCRA (2025, 2026), ProvSec (2023, 2024, 2025, 2026), APKC (2021)</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="footer">NICE TO MEET YOU :)</footer>
+	<script src="assets/js/theme.js"></script>
+</body>
+</html>
