@@ -175,6 +175,12 @@ main {
 	font-size: 1.05rem;
 }
 
+.intro p:not(.role) {
+	text-align: justify;
+	text-justify: inter-word;
+	hyphens: auto;
+}
+
 .portrait {
 	width: 215px;
 	aspect-ratio: 1;
