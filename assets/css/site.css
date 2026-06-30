@@ -245,6 +245,61 @@ main {
 	font-weight: 600;
 }
 
+.news-section {
+	padding-top: 0;
+}
+
+.pseudo-news {
+	margin-top: 0.75rem;
+	padding: 1rem 1.15rem;
+	border: 1px solid var(--border);
+	border-left: 3px solid var(--accent);
+	border-radius: 6px;
+	background: var(--surface);
+}
+
+.pseudo-line {
+	display: grid;
+	grid-template-columns: 2.2rem 1fr;
+	gap: 0.75rem;
+	align-items: baseline;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+	font-size: 0.92rem;
+	line-height: 1.65;
+}
+
+.pseudo-line.indent code {
+	padding-left: 1.25rem;
+}
+
+.pseudo-index {
+	color: var(--muted);
+	font-size: 0.78rem;
+	user-select: none;
+}
+
+.pseudo-line code {
+	color: var(--text);
+	font-family: inherit;
+	white-space: normal;
+}
+
+.pseudo-news p {
+	margin: 0;
+	color: var(--muted);
+	font-size: 0.98rem;
+	line-height: 1.6;
+	text-align: justify;
+	text-justify: inter-word;
+	hyphens: auto;
+}
+
+.news-marker {
+	display: inline-block;
+	margin-right: 0.4rem;
+	color: var(--accent);
+}
+
 section {
 	padding: 1.7rem 0;
 	border-top: 1px solid var(--border);
